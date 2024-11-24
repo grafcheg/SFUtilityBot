@@ -28,7 +28,7 @@ static class Program
 
         services.AddSingleton<IStorage, MemoryStorage>();
         
-        services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("7636522547:AAHtK7d0QMJCOOSBsCVl6C7sr_TmAAKogR0"));
+        services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("BOT_TOKEN"));
         services.AddHostedService<Bot>();
     }
 }

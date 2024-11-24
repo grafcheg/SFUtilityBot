@@ -17,8 +17,6 @@ public class InlineKeyboardController
 
     public async Task Handle(CallbackQuery? callbackQuery, CancellationToken cancellationToken)
     {
-        // Console.WriteLine($"Контроллер {GetType().Name} обнаружил нажатие на кнопку");
-        
         if (callbackQuery?.Data == null)
             return;
 
